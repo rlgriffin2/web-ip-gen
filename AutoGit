@@ -3,6 +3,9 @@
 set username [lindex $argv 0];
 set password [lindex $argv 1];
 
+echo username
+echo password
+
 expect "*sername for*"
 send -- "$username\r"
 expect "*assword for*"
