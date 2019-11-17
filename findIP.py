@@ -11,6 +11,4 @@ def publish(username, password):
     subprocess.call(['./publishIP', '-$newip', '-$username', '-$password'])
 
 if __name__ == '__main__':
-    print(sys.argv[1])
-    print(sys.argv[2])
     publish((sys.argv[1]),(sys.argv[2]))

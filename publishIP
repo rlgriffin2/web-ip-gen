@@ -13,4 +13,4 @@ git add .
 git commit -m "auto-updated ip"
 git push
 
-./AutoGit -$2 -$3
+./AutoGit -username -password
