@@ -2,11 +2,20 @@
 
 #script for updating the index.html file of the pages site with new ip
 ipaddr=$1
+username=$2
+password=$3
 
 echo "<h>$ipaddr</h>" > index.html
 
 
-git add ./index.html
-git commit -m "updated ip"
+git add .
+git commit -m "auto-updated ip"
 git push
-interact
+
+expect "*sername for*"
+send -- "$username\r"
+send -- "\r"
+expect "*assword for*"
+send -- "$password\r"
+send -- "\r"
+#interact
