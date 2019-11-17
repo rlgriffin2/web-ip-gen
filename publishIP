@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/bash -f
+set timeout -1
 
 #script for updating the index.html file of the pages site with new ip
 ipaddr=$1
@@ -12,10 +13,4 @@ git add .
 git commit -m "auto-updated ip"
 git push
 
-expect "*sername for*"
-send -- "$username\r"
-send -- "\r"
-expect "*assword for*"
-send -- "$password\r"
-send -- "\r"
-#interact
+./AutoGit -$2 -$3
