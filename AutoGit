@@ -1,5 +1,7 @@
 #!/usr/bin/expect -f
 
+spawn AutoGit
+
 set username [lindex $argv 0];
 set password [lindex $argv 1];
 
