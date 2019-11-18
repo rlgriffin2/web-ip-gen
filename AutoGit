@@ -2,6 +2,8 @@
 
 #spawn AutoGit
 
+spawn git push
+
 set username [lindex $argv 0];
 set password [lindex $argv 1];
 
@@ -9,3 +11,5 @@ expect "*sername for*"
 send -- "$username\r"
 expect "*assword for*"
 send -- "$password\r"
+
+exit

@@ -11,6 +11,5 @@ echo "<h>$ipaddr</h>" > index.html
 
 git add .
 git commit -m "auto-updated ip"
-git push
 
 ./AutoGit -$username -$password
