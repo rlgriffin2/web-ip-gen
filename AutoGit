@@ -7,8 +7,8 @@ spawn git push
 set username [lindex $argv 0];
 set password [lindex $argv 1];
 
-echo $username
-echo $password
+spawn echo $username
+spawn echo $password
 
 expect "*sername for*"
 send -- "$username\r"
